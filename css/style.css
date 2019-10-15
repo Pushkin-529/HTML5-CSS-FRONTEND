@@ -1,0 +1,86 @@
+body{
+    background-color: #f8f8f8;
+}
+.menu{
+    margin: 0px;
+    padding: 0px;
+}
+.menu li{
+    list-style-type: none;
+    border: solid thin;
+    width: 140px;
+    text-align: center;
+    background-color: beige;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+}
+.menu li:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+.menu li:hover {
+    background-color: black;
+    color: beige;
+    text-decoration-color: beige;
+}
+.menu li a:hover{
+    color: beige;
+}
+
+img{
+    border-style: dotted;
+    border-width: thin;
+}
+
+h1 {
+    color: black;
+    text-decoration-line: underline;
+}
+
+.trade_name {
+    color: darkblue;
+}
+
+.trade_info {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration-color: black;
+    background-color: #eaeaea;
+    
+}
+.short_description{
+    font-size: 14px;
+    font-style: italic;
+    text-decoration-color: #707070;
+    line-height: 16px;
+}
+.options{
+    text-decoration-color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    list-style-type: none;
+    list-style-image: url(../img/cat.gif);
+}
+.feedback_form{
+    background-color: beige;
+    border-style: dotted;
+    border-width: thin;
+}
+input[type="text"]{
+    font-style: italic;
+    background-color: #f8f8f8;
+    border-style: solid;
+    border-width: thin;
+    border-color: darkgray;
+}
+textarea[name="message"]{
+    font-style: italic;
+    background-color: #f8f8f8;
+    border-style: solid;
+    border-width: thin;
+    border-color: darkgray;
+}
