@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.main-header {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #445161;
+    color: #fff;
+    font-family: Arial;
+}
+
+.main-header:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.main-header-wrp {
+    width: 458px;
+    float: left;
+    /*   border: 1px solid white;
+   */
+}
+
+.main-header-title {
+    margin: 0 0 10px 0;
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.main-header-list {
+    padding: 0 0 0 20px;
+    margin: 0 0 0 0;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.main-header-list-item {
+    list-style-type: none;
+    position: relative;
+}
+
+.main-header-list-item:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url('https://cdn.icon-icons.com/icons2/510/PNG/512/checkmark_icon-icons.com_50429.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    /*   border: 1px solid #fff;
+   */
+    position: absolute;
+    top: 10px;
+    left: -18px;
+}
+
+.main-header-img {
+    display: block;
+    width: 469px;
+    min-height: 214px;
+    float: right;
+    background-color: #fff;
+}
+
+.content {}
