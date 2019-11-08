@@ -1,0 +1,144 @@
+@keyframes anim {
+  0%{
+    margin-left: 1px;
+  }
+  50% {
+    margin-left: 300px;
+  }
+  100%{
+    margin-left: 1px;
+  }
+}
+
+@keyframes anim2 {
+0% {
+  margin-left:3px;
+  margin-top:3px;
+  background-color:#7F0055;
+  }
+30% {margin-left:3px;
+  margin-top:250px;
+  background-color:#7F0055;
+  }
+60% {margin-left:200px;
+  margin-top:250px;
+  background-color:black;
+  }
+100% {
+  margin-left:3px;
+  margin-top:3px;
+  background-color:#7F0055;
+  }
+}
+
+@keyframes anim3 {
+  0%{
+    margin-left: 1px;
+    transform: scale(1);
+  }
+  50% {
+    margin-left: 300px;
+    transform: scale(0.5);
+  }
+  100%{
+    margin-left: 1px;
+    transform: scale(1);
+  }
+}
+
+.box1 {
+  width: 100px;
+  min-height: 100px;
+  background-color: gold;
+  animation: anim 2 3s;
+  animation-timing-function:ease;
+  margin: 0 0 5px 0;
+  transform-origin: 0 50%;
+  transform: perspective(200px) rotateY(15deg);
+}
+
+.box2 {
+  width: 100px;
+  min-height: 100px;
+  background-color: gold;
+  animation: anim 2 3s;
+  animation-timing-function:linear;
+  margin: 0 0 5px 10px;
+  transform: skew(-15deg);
+}
+.box3 {
+  width: 100px;
+  min-height: 100px;
+  background-color: gold;
+  animation: anim3 1 3s;
+  animation-timing-function:ease-out;
+  margin: 0 0 5px 0;
+  transition: background-color 1s ease-out,
+              width 1s ease-out,
+              min-height 1s ease-out;
+}
+.box3:hover {
+  animation: anim4 infinite 3s;
+  background-color: red;
+  width: 20px;
+  min-height:20px;
+}
+.box4 {
+  width: 100px;
+  min-height: 100px;
+  background-color: gold;
+  animation: anim 2 3s;
+  animation-timing-function:ease-in-out;
+  margin: 25px 0 25px 20px;
+  transition:transform 1s ease,border-radius 1s ease;
+}
+.box4:hover {
+  transform: rotate(360deg);
+  border-radius:50%;
+}
+.box5 {
+  width: 100px;
+  min-height: 100px;
+  background-color: gold;
+  animation: anim 2 3s;
+  animation-timing-function:ease-in;
+  margin: 0 0 5px 0;
+}
+.box6 {
+  width: 100px;
+  min-height: 100px;
+  background-color: gold;
+  animation: anim 2 3s;
+  animation-timing-function:cubic-bezier(1, -0,0,1);
+  margin: 0 0 5px 0;
+}
+.box7 {
+  width: 100px;
+  min-height: 100px;
+  background-color: blue;
+  animation: anim2 2 3s;
+  margin: 0 0 5px 0;
+//  animation-iteration-count: infinite;
+}
+.box7:hover {
+  animation-play-state: paused;
+}
+.box8 {
+  width: 100px;
+  min-height: 100px;
+  background-color: red;
+  animation: anim 2 3s;
+  margin: 0 0 5px 0;
+  animation-direction: reverse;
+}
+.box8:hover {
+  animation-play-state: paused;
+}
+.box9 {
+  width: 100px;
+  min-height: 100px;
+  background-color: green;
+  animation: anim 2 3s;
+  margin: 0 0 5px 0;
+  animation: anim 1s ease-in-out 0.5s, anim2 2s linear;
+}
