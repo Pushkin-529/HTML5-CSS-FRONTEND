@@ -1,0 +1,145 @@
+.menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0;
+/*   border: 1px solid black; */
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+}
+
+.menu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+/*   border: 1px solid black; */
+}
+
+label,
+#menu {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .menu {
+  visibility: visible;
+}
+
+
+
+@media (max-width: 400px) {
+  
+  label {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-image:  url('https://cdn3.iconfinder.com/data/icons/mobile-friendly-ui/100/menu-128.png');
+    background-size: 100%;
+    background-repeat: ;
+    background-position: 0 0;
+    background-color: #fff;
+  }
+  
+  .menu {
+    visibility: hidden;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: column;
+  }
+  .menu li {
+    text-align: center;
+    background-color: #ccc;
+    margin-top: 2px;
+  }
+    
+}
+
+.modal {
+  border: 1px solid black;
+  width: 250px;
+  height: 250px;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+@keyframes anim {
+  0%{
+    transform: scale(0.1);
+  }
+  100%{
+    transform: scale(1);
+  } 
+}
+
+.modal:target {
+  display: block;
+  border-radius: 10px;
+  z-index: 300;
+  animation: anim 1 0.3s;
+  animation-timing-function:ease-out;
+  margin: 0 0 5px 0;
+
+}
+
+
+.modal:before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  min-height: 100px;
+  background-color:gold;
+}
+
+main{
+  width: 100%;
+  min-height: 200px;
+  background-color:coral;  
+}
+
+footer {
+  width: 100%;
+  min-height: 100px;
+  background-color:#ccc;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 400px;
+  }
+  header {
+    background-color: green;
+  }
+  main {
+    background-color: yellow;
+  }
+  footer {
+    background-color: red;
+  }
+}
+
